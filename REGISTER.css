@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{   
+    margin: 0;
+    padding:0;
+    background: #2780ec;
+    font-family: Verdana,Geneva,Tahoma,sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar{
+    position: absolute;
+    top: 10;
+}
+
+.model{
+    min-width: 60vw;
+    min-height:70vh;
+    width: fit-content;
+    border-radius:15rem;
+    box-shadow: 4px 6px 8px #8b0763;
+    margin:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    place-items: center;
+}
+
+.right-content{
+    place-self:strerch;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 1.7rem;
+    text-align: centre;
+}
+.heading:hover{
+    text-decoration:underline;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width:80%;
+  max-width: 400ppx;
+  margin: 0 auto;
+}
+
+.input-field {
+    background-color: #ece3ea;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    resize: none;
+    border: none;
+    outline: none;
+}
+.input-field: focus{
+    background-color: #a0d1eb;
+}
+
+.submit-btn{
+    width: 50%;
+    margin-left: auto;
+    border-radius: 5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 1.3 rem;
+    background-color: #a62cb1;
+    border: none;
+    font-weight: bold;
+    color:white;
+}
+
+.reset-btn{
+    width: 30%;
+    margin-left: auto;
+    border-radius: 5rem;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-top: 1.3 rem;
+    background-color: #189d2e;
+    border: none;
+    font-weight: bold;
+    color:white;
+}
+
+.register-heading{
+    text-align: center;
+    margin-top : 1.4rem;
+}
+
+.footer{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #191970;
+    font-weight:bolder;
+    width: 100%;
+    font-variant: small-caps;
+}
+
+@media screen and (max-width: 815px){
+    body{
+        padding-top: 6rem;
+    }
+     .modal{
+        grid-template-columns: 1fr;
+        padding:2rem;
+     }
+
+     .image-wrapper{
+        display: none;
+     }
+}
+
+@media screen and (max-width:490px) {
+    .modal{
+        min-width: 200px;
+    }
+}
