@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOVIK EDITION</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<!--visual content-->
+<body>
+   <!--navigation-->
+   <nav class ="navbar">
+    <figure>
+        <img src ="./s2.jpg"alt="SHOVIK" width = "100px"/>
+    </figure>
+   </nav>
+
+
+   <!--main content-->
+   <main class = "model">
+    <div>
+        <figure class ="image-wrapper">
+         <img src="./cropped.jpg" alt="bg image" width="700"/>   
+        </figure>
+    </div>
+
+    <div class="right content">
+        <h1 class="heading">Register for SHOVIK EDITION</h1>
+
+        <form action="" class="form-wrapper">
+
+            <input
+            type="text"
+            required
+            name="name"
+            placeholder="WRITE YOUR NAME"
+            class="input-field"
+            />
+
+            <input
+             type="date"
+             min="1"
+             max="30"
+             required
+             name="age"
+             placeholder="select your DB"
+             class="input-field"
+             />
+
+             <input
+              type ="email"
+              required
+               name="email"
+               placeholder="exampler@email.com"
+               class="input-field"
+               />
+
+               <input
+               type="text"
+               list="domain" 
+               placeholder="select your domain"
+               class="input-field"
+               />
+               <datalist id="domain">
+                <option value="WEB DEVELOPMENT"></option>
+                <option value ="APP DEVELOPMENT"></option>
+                <option value="AI & machine learning"></option>
+                <option value="Data analytic"></option>
+                <option value="Game Development"></option>
+                <option value="CLoud computing"></option>
+               </datalist>
+               
+
+             <textarea
+             name="message"
+             required
+             cols="20"
+             rows="4"
+             placeholder="why you want to take this course"
+             class="input-field"
+             ></textarea>
+
+             <button type="submit"class="submit-btn">Start your journey!</button>
+             <button type ="reset" class="reset-btn">Reset</button>
+
+            </form>
+            <div>
+                <h3 class="regular-heading">why to register</h3>
+                <ul>
+                    <li>Get familiarised with tech industry</li>
+                    <li>See what various domein have to offer</li>
+                    <li>We are awsome so are you</li>
+                </ul>
+            </div>
+    </div>
+   </main>
+
+   <footer class="footer">
+    <p style="font-size:160%">DESIGNED BY SHOVIK &#128151 </p>
+   </footer>
+</body>
+</html>
